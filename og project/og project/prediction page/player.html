@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Players to Teams</title>
+    <link rel="stylesheet" href="playercss.css">
+</head>
+<body>
+    <header>
+        <div class="header-overlay">
+            <h1>FORM YOUR TEAM</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Team A Section -->
+        <section class="team-section">
+            <h2>Team A</h2>
+            <div class="team-controls">
+                <label for="teamANumber">Number of Players:</label>
+                <input type="number" id="teamANumber" min="1" max="20" required>
+                <button id="teamASetNumber">Set</button>
+            </div>
+            <form id="teamAForm" style="display: none;">
+                <input type="text" id="teamAPlayerName" placeholder="Enter player name" required>
+                <button type="submit">Add Player</button>
+            </form>
+            <ul id="teamAList"></ul>
+        </section>
+
+        <!-- Team B Section -->
+        <section class="team-section">
+            <h2>Team B</h2>
+            <div class="team-controls">
+                <label for="teamBNumber">Number of Players:</label>
+                <input type="number" id="teamBNumber" min="1" max="20" required>
+                <button id="teamBSetNumber">Set</button>
+            </div>
+            <form id="teamBForm" style="display: none;">
+                <input type="text" id="teamBPlayerName" placeholder="Enter player name" required>
+                <button type="submit">Add Player</button>
+            </form>
+            <ul id="teamBList"></ul>
+        </section>
+
+        <!-- Submit Button -->
+         <section class="submit-section">
+
+             <div class="submitSection" >
+                 <button class="submitButton">Submit Teams</button>
+                </div>
+        </section>
+        
+
+    </main>
+
+    <script src="playerjs.js"></script>
+</body>
+</html>
