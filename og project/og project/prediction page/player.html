@@ -8,12 +8,23 @@
 </head>
 <body>
     <header>
-        <div class="header-overlay">
-            <h1>FORM YOUR TEAM</h1>
-        </div>
+        <nav>
+            <div class="navlinks">
+                <ul>
+                   <li><a href="#">HOME</a></li>
+                   <li><a href="#">PLAYER STATUS</a></li>
+               </ul>
+           </div>
+        </nav>
+
     </header>
+    
+    <div class="title-section">
+        <h1>Comprehensive Head-to-Head Analysis and Accurate Winning Predictions. Select Your Preferred Players for Both Teams:</h1>
+    </div>
 
     <main>
+
         <!-- Team A Section -->
         <section class="team-section">
             <h2>Team A</h2>
@@ -54,6 +65,17 @@
         
 
     </main>
+        <!-- Pop-up Modal -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Final Team Selection</h2>
+        <h3>Team A</h3>
+        <ul id="finalTeamA"></ul>
+        <h3>Team B</h3>
+        <ul id="finalTeamB"></ul>
+    </div>
+</div>
 
     <script src="playerjs.js"></script>
 </body>
